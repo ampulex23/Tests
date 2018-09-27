@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+</head>
+<body onload="App.init()">
+
+<main id="app">
+    <el-container>
+        <el-header>
+            <router-link to="/" active-class="current">
+                ИНФО
+            </router-link>
+            <router-link to="/feed" active-class="current">
+                ГАЛЕРЕЯ
+            </router-link>
+        </el-header>
+        <el-main>
+            <router-view></router-view>
+        </el-main>
+    </el-container>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.0.1/vuex.js"></script>
+<script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://unpkg.com/element-ui@2.4.6/lib/umd/locale/ru-RU.js"></script>
+<script>
+    ELEMENT.locale(ELEMENT.lang.ruRU)
+</script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
